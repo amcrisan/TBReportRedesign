@@ -1,0 +1,129 @@
+---
+title: "Supplemental Analysis - Design Choice Questionnaire"
+author: "Anamaria Crisan"
+date: "2017-OCT-4"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+The following document is a supplement to the paper *"Evidence-Based Design and Evaluation of a Whole Genome Sequencing Clinical Report for the Reference Microbiology Laboratory"* (to appear in publication) and summarizes the analysis of quantitative questions from the design choice quesionnaire. In this analysis, we have purposefully removed questions where qualitative, free form, responses could be provided, and we have also removed location data, or questions with "other" responses that could have identified participants.
+
+Please also note that the survey questions and answer data provided here are *NOT* the default output for fluid survey (the platform that we used to conducted the quesionnaire). These data are cleaned! We've provided the cleaning script, but it will not actually work because we don't provide the original, messy, data.
+
+Finally, the figure produced here does not identically match the figure that is in the paper because we used image editing software to add the additional text that exists in the figure of the final paper.  
+
+```{r setup, message=FALSE,warning=FALSE}
+library(dplyr)
+library(tidyr)
+library(cowplot)
+library(ggplot2)
+library(RColorBrewer)
+
+#added code from moi
+source("utilityFunctions.R")
+
+#load the data
+questions<- read.csv(file="../design_choice_questionnaire_questions.csv",header=T)
+responses<-read.csv(file="../design_choice_questionnaire_results_releaseVersion.csv",header=T)
+```
+
+**Summary of wording Type Questions**
+
+Here is an attempt to build one summary of all the options. Running this code can take a few minutes.
+
+```{r summary, eval=TRUE, fig.height=7, include=FALSE}
+  #spereate question number and question letter
+  questions$questNumOnly<-as.numeric(sub("[A-Z,a-z]+", "", questions$questNumPart))
+  questions$questLetterOnly<-sub("[0-9]+", "", questions$questNumPart)
+  
+ 
+  #mast list of all questions to plot, no demographic questions
+   temp<- questions %>%
+    filter(questFormat %in% c("ONECHOICE","RANK")) %>%
+    filter(questNumOnly>=5) %>%
+    filter(!(questNumOnly %in% 17:23))
+  
+  #WORDING QUESTIONS
+  pList<-c()
+ 
+  questNumVals<-temp %>% filter(questType == "WORDING") %>% select(questNumPart) %>% unique()
+  
+  for(questNum in questNumVals$questNumPart){
+    temp2<-temp %>% filter(questNumPart == questNum)
+    qClass<-as.character(temp2$questType[1])
+    qType<-as.character(temp2$questFormat[1])
+    
+    pList[[qType]][[questNum]]<-normRankVisSplit_mod(temp=temp2,responses=responses,nOpt=length(temp2$questOpt),qType=qType,title=questNum)
+  }
+  
+ #plot questions by question type  
+  #pdf(file="WORDINGQ.pdf",pointsize=12,compress=F)
+ plot_grid(pList[[1]][[1]],
+           pList[[1]][[1]], #repeat because for some reason this gets cut off when printed out..
+           pList[[1]][[2]],
+           pList[[1]][[3]],
+           pList[[2]][[1]],
+           pList[[2]][[2]],
+           pList[[2]][[3]],
+           ncol=1,align="v")
+ #dev.off()
+```
+
+Egads! That default visualization is messy. We had a vote as to which would take longer: making it pretty by programming or using this base version and adding the additional content (text) using an image editor. We voted for  editor.
+
+Question 11B is problematic, because it's basically select as many as you want and it's the only type of question like that. So it's somehwere between Rank and zero and 1.
+
+```{r summaryDesign, eval=TRUE, echo=FALSE,fig.height=7}
+  
+  #spereate question number and question letter
+  questions$questNumOnly<-as.numeric(sub("[A-Z,a-z]+", "", questions$questNumPart))
+  questions$questLetterOnly<-sub("[0-9]+", "", questions$questNumPart)
+  
+ 
+  #mast list of all questions to plot, no demographic questions
+   temp<- questions %>%
+    filter(questFormat %in% c("ONECHOICE","RANK")) %>%
+    filter(questNumOnly>=5) %>%
+    filter(!(questNumOnly %in% 20:23))
+  
+  #WORDING QUESTIONS
+  pList<-c()
+ 
+  questNumVals<-temp %>% filter(!(questType %in% c("WORDING","FULL REPORT"))) %>% select(questNumPart) %>% unique()
+  
+  for(questNum in questNumVals$questNumPart){
+    temp2<-temp %>% filter(questNumPart == questNum)
+    qClass<-as.character(temp2$questType[1])
+    qType<-as.character(temp2$questFormat[1])
+    
+    pList[[qType]][[questNum]]<-normRankVisSplit_mod(temp=temp2,responses=responses,nOpt=length(temp2$questOpt),qType=qType,title=questNum)
+  }
+  
+ #plot questions by question type  
+#pdf(file="DESIGNQ.pdf",pointsize=10,compress=F)
+ plot_grid(pList[[1]][[1]],
+           pList[[1]][[1]],
+           pList[[1]][[2]],
+           pList[[1]][[3]],
+           pList[[1]][[4]],
+           pList[[1]][[5]],
+           pList[[2]][[1]],
+           pList[[2]][[2]],
+           pList[[2]][[3]],
+           pList[[2]][[4]],
+           ncol=1,align="v")
+  #dev.off()
+```
+ 
+```{r fullReports,message=FALSE,warning=FALSE} 
+ #finally, plot the full report
+temp2<-temp %>% filter(questNumPart == "24A")
+  qClass<-as.character(temp2$questType[1])
+  qType<-as.character(temp2$questFormat[1])
+ 
+  vis<-normRankVisSplit_mod(temp=temp2,responses=responses,nOpt=length(temp2$questOpt),qType=qType,title="24A")
+  
+  vis
+```
+

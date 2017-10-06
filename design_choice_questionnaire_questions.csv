@@ -1,0 +1,112 @@
+questID,questNumPart,questText,questOpt,questOptVal,questOptText,questType,questFormat,controlOpt
+ID,ID,NA,NA,,,ID,NA,NA
+Location,Location,NA,NA,,,DEMO,TEXT,NA
+Q1opt1,1,Do you work with tuberculosis patients or the Mycobacterium tuberculosis bacterium at all,NA,,,DEMO,MANYCHOICE,NA
+Q1Bopt1,1B,What is your role in tuberculosis diagnosis  treatment  management  and or surveillance ,Physician   I work directly with TB patients  providing care and or case management,Physician,  I work directly with TB patients  providing care and or case management,DEMO,MANYCHOICE,NA
+Q1Bopt2,1B,What is your role in tuberculosis diagnosis  treatment  management  and or surveillance ,Nurse   I work directly with TB patients  providing care and or case management,Nurse,  I work directly with TB patients  providing care and or case management,DEMO,MANYCHOICE,NA
+Q1Bopt3,1B,What is your role in tuberculosis diagnosis  treatment  management  and or surveillance ,Laboratory work   I work in a mycobacteriology laboratory setting where I am involved with lab testing for TB,Laboratory,work   I work in a mycobacteriology laboratory setting where I am involved with lab testing for TB,DEMO,MANYCHOICE,NA
+Q1Bopt4,1B,What is your role in tuberculosis diagnosis  treatment  management  and or surveillance ,Surveillance epidemiology   I work with TB data to understand patterns in disease occurrence,Surveillance,epidemiology   I work with TB data to understand patterns in disease occurrence,DEMO,MANYCHOICE,NA
+Q1Bopt5,1B,What is your role in tuberculosis diagnosis  treatment  management  and or surveillance ,Research   I carry out academic research into TB and or M  tuberculosis,Research,  I carry out academic research into TB and or M  tuberculosis,DEMO,MANYCHOICE,NA
+Q1Bopt6,1B,What is your role in tuberculosis diagnosis  treatment  management  and or surveillance ,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q1Bopt7,1B,What is your role in tuberculosis diagnosis  treatment  management  and or surveillance ,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q2opt1,2,Do you work in public health microbiology or microbial genomics  whether on TB or another pathogen,NA,,,DEMO,MANYCHOICE,NA
+Q2Bopt1,2B,What is your role in public health microbiology or microbial genomics ,Clinical  I am directly involved in patient care and or case management,Clinical, I am directly involved in patient care and or case management,DEMO,MANYCHOICE,NA
+Q2Bopt2,2B,What is your role in public health microbiology or microbial genomics ,Bioinformatics  I use computational tools to analyse genomic data from pathogens,Bioinformatics, I use computational tools to analyse genomic data from pathogens,DEMO,MANYCHOICE,NA
+Q2Bopt3,2B,What is your role in public health microbiology or microbial genomics ,Laboratory work  I am involved in directly handling and or testing specimens,Laboratory,work  I am involved in directly handling and or testing specimens,DEMO,MANYCHOICE,NA
+Q2Bopt4,2B,What is your role in public health microbiology or microbial genomics ,Surveillance epidemiology   I work with data to understand patterns in disease occurrence,Surveillance,epidemiology   I work with data to understand patterns in disease occurrence,DEMO,MANYCHOICE,NA
+Q2Bopt5,2B,What is your role in public health microbiology or microbial genomics ,Research  I carry out academic research in public health and or microbial genomics,Research, I carry out academic research in public health and or microbial genomics,DEMO,MANYCHOICE,NA
+Q2Bopt6,2B,What is your role in public health microbiology or microbial genomics ,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q2Bopt7,2B,What is your role in public health microbiology or microbial genomics ,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q2Copt1,2C,What pathogens do you work on,Respiratory infections  e g  influenza  pertussis,Respiratory,infections  e g  influenza  pertussis,DEMO,MANYCHOICE,NA
+Q2Copt2,2C,What pathogens do you work on,Enteric infections  e g  Salmonella  E  coli,Enteric,infections  e g  Salmonella  E  coli,DEMO,MANYCHOICE,NA
+Q2Copt3,2C,What pathogens do you work on,Vector borne disease  e g  malaria  Zika,Vector,borne disease  e g  malaria  Zika,DEMO,MANYCHOICE,NA
+Q2Copt4,2C,What pathogens do you work on,Blood borne disease  e g  HIV  hepatitis,Blood,borne disease  e g  HIV  hepatitis,DEMO,MANYCHOICE,NA
+Q2Copt5,2C,What pathogens do you work on,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q2Copt6,2C,What pathogens do you work on,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q3opt1,3,Who is your primary employer,Public Health Organization   e g  Public Health England  CDC,Public,Health Organization   e g  Public Health England  CDC,DEMO,MANYCHOICE,NA
+Q3opt2,3,Who is your primary employer,Private Clinic Primary Care   e g  a doctor s office,Private,Clinic Primary Care   e g  a doctor s office,DEMO,MANYCHOICE,NA
+Q3opt3,3,Who is your primary employer,Hospital,Hospital,,DEMO,MANYCHOICE,NA
+Q3opt4,3,Who is your primary employer,Academic Institution,Academic,Institution,DEMO,TEXT,NA
+Q3opt5,3,Who is your primary employer,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q3opt6,3,Who is your primary employer,Other  please specify,Other, please specify,DEMO,TEXT,NA
+Q4opt1,4,In what country do you work,NA,,,DEMO,ONECHOICE,NA
+Q4opt2,4,In what country do you work,other,Other,,DEMO,TEXT,NA
+Q5Aopt1,5A,You are reading a summary of a patient s lab test results. Which of the following summary statement formats is better at communicating the information you need to know to do your job,NA,,,EMPHASIS,ONECHOICE,NONE
+Q5Bopt1,5B,Please explain your choice or provide feedback,NA,,,EMPHASIS,TEXT,NA
+Q6Aopt1,6A,One section of the report will describe which mycobacterial species a patient was diagnosed with. Which headline best describes this section of the report.,A  Speciation,A,Speciation,WORDING,RANK,B
+Q6Aopt2,6A,One section of the report will describe which mycobacterial species a patient was diagnosed with. Which headline best describes this section of the report.,B  Organism,B,Organism,WORDING,RANK,B
+Q6Aopt3,6A,One section of the report will describe which mycobacterial species a patient was diagnosed with. Which headline best describes this section of the report.,C  Diagnosis,C,Diagnosis,WORDING,RANK,B
+Q6Aopt4,6A,One section of the report will describe which mycobacterial species a patient was diagnosed with. Which headline best describes this section of the report.,D  Species,D,Species,WORDING,RANK,B
+Q6Bopt1,6B,Please explain your choice or provide feedback,NA,,,WORDING,TEXT,NA
+Q7Aopt1,7A,Which wording best conveys tuberculosis speciation results,NA,,,WORDING,ONECHOICE,B
+Q7Bopt1,7B,Please explain your choice or provide feedback,NA,,,WORDING,TEXT,NA
+Q8Aopt1,8A,The presence of particular mutations in a TB genome can be used to predict whether a specimen is sensitive or resistant to specific antibiotics  Which headline best describes this section of the report,A  Drug Resistance,A,Drug Resistance,WORDING,RANK,A
+Q8Aopt2,8A,The presence of particular mutations in a TB genome can be used to predict whether a specimen is sensitive or resistant to specific antibiotics  Which headline best describes this section of the report,B  Drug Sensitivity,B,Drug Sensitivity,WORDING,RANK,A
+Q8Aopt3,8A,The presence of particular mutations in a TB genome can be used to predict whether a specimen is sensitive or resistant to specific antibiotics  Which headline best describes this section of the report,C  Drug Susceptibility,C,Drug Susceptibility,WORDING,RANK,A
+Q8Aopt4,8A,The presence of particular mutations in a TB genome can be used to predict whether a specimen is sensitive or resistant to specific antibiotics  Which headline best describes this section of the report,D  Treatment,D,Treatment,WORDING,RANK,A
+Q8Bopt1,8B,Please explain your choice or provide feedback,NA,,,WORDING,TEXT,NA
+Q9Aopt1,9A,There are many ways to represent a TB drug s name  from a single letter to a full name.  Which naming scheme is most useful on a report.,NA,,,WORDING,ONECHOICE,A
+Q9Bopt1,9B,Please explain your choice or provide feedback,NA,,,WORDING,TEXT,NA
+Q10Aopt1,10A,A specimen can be described as susceptible to an antibiotic  high likelihood of clinical success  resistant to an antibiotic  low likelihood of clinical success  intermediate  clinical success uncertain  or unknown not enough information to draw a conclusion.  Which naming scheme is most useful on a report,NA,,,WORDING,ONECHOICE,A
+Q10Bopt1,10B,Please explain your choice or provide feedback,NA,,,WORDING,TEXT,NA
+Q11Aopt1,11A,Drug resistance in TB is caused by point mutations  single base pair changes that alter the normal function of a gene or the protein it encodes. If a resistance phenotype is predicted from genomic data  would you want to know the exact mutation that caused it,NA,,,DATA,ONECHOICE,A
+Q11Bopt1,11B,What types of information related to the point mutation would you want to see ,Gene abbreviation  e g  katG  inhA,A,Gene abbreviation  e g  katG  inhA,DATA,MANYCHOICE,NA
+Q11Bopt2,11B,What types of information related to the point mutation would you want to see ,Base pair change  e g  A1562C,B,Base pair change  e g  A1562C,DATA,MANYCHOICE,NA
+Q11Bopt3,11B,What types of information related to the point mutation would you want to see ,Amino acid change  e g  S531T,C,Amino acid change  e g  S531T,DATA,MANYCHOICE,NA
+Q11Bopt4,11B,What types of information related to the point mutation would you want to see ,Number of sequencing reads that position  e g  48x,D,Number of sequencing reads that position  e g  48x,DATA,MANYCHOICE,NA
+Q11Bopt5,11B,What types of information related to the point mutation would you want to see ,Number of reads supporting the mutation coverage  e g 47 48,E,Number of reads supporting the mutation coverage  e g 47 48,DATA,MANYCHOICE,NA
+Q12Aopt1,12A,Here are four ways of showing a result in which a specimen is resistant to two drugs. Which one is easiest for you to interpret.,A  Basic,A,Basic,EMPHASIS,RANK,A
+Q12Aopt2,12A,Here are four ways of showing a result in which a specimen is resistant to two drugs. Which one is easiest for you to interpret.,B  Alert Glyphs,B,Alert Glyphs,EMPHASIS,RANK,A
+Q12Aopt3,12A,Here are four ways of showing a result in which a specimen is resistant to two drugs. Which one is easiest for you to interpret.,C  Shaded,C,Shaded,EMPHASIS,RANK,A
+Q12Aopt4,12A,Here are four ways of showing a result in which a specimen is resistant to two drugs. Which one is easiest for you to interpret.,D  Bolded,D,Bolded,EMPHASIS,RANK,A
+Q12Bopt1,12B,Please explain your choice or provide feedback,NA,,,EMPHASIS,TEXT,NA
+A  Basic,13A,Depending on the resistance mutations observed  an isolate might be identified as having multidrug resistant TB,  MDR TB . There are many ways this could be noted on the report.,Q13Aopt1,A,Basic,DESIGN,RANK
+B  Summary Sentence,13A,Depending on the resistance mutations observed  an isolate might be identified as having multidrug resistant TB,  MDR TB . There are many ways this could be noted on the report.,Q13Aopt2,B,Summary Sentence,DESIGN,RANK
+C  Tick Boxes,13A,Depending on the resistance mutations observed  an isolate might be identified as having multidrug resistant TB,  MDR TB . There are many ways this could be noted on the report.,Q13Aopt3,C,Tick Boxes,DESIGN,RANK
+Q13Bopt1,13B,Please explain your choice or provide feedback,NA,,,DESIGN,TEXT,NA
+Q14Aopt1,14A,One section of the report will describe whether a patient s specimen is closely related to any specimens that were previously sequenced  suggesting the cases might be part of a cluster or outbreak  Which headline best describes this section of the report.,A  Relatedness,A,Relatedness,WORDING,RANK,A
+Q14Aopt2,14A,One section of the report will describe whether a patient s specimen is closely related to any specimens that were previously sequenced  suggesting the cases might be part of a cluster or outbreak  Which headline best describes this section of the report.,B  Epidemiology,B,Epidemiology,WORDING,RANK,A
+Q14Aopt3,14A,One section of the report will describe whether a patient s specimen is closely related to any specimens that were previously sequenced  suggesting the cases might be part of a cluster or outbreak  Which headline best describes this section of the report.,C  Cluster Detection,C,Cluster Detection,WORDING,RANK,A
+Q14Bopt1,14B,Please explain your choice or provide feedback,NA,,,WORDING,TEXT,NA
+Q15Aopt1,15A,Data on speciation and diagnosis is presented below in two different formats.  Which do you find most interpretable,NA,,,DESIGN,ONECHOICE,A
+Q15Bopt1,15B,Please explain your choice or provide feedback,NA,,,DESIGN,TEXT,NA
+Q16Aopt1,16A,Data on drug susceptibility is presented below in a number of different formats . Which do you find most interpretable.,A  Drugs listed by category,A,Drugs listed by category,DESIGN,RANK,E
+Q16Aopt2,16A,Data on drug susceptibility is presented below in a number of different formats . Which do you find most interpretable.,B  Prediction by drug,B,Prediction by drug,DESIGN,RANK,E
+Q16Aopt3,16A,Data on drug susceptibility is presented below in a number of different formats . Which do you find most interpretable.,C  Summary sentence,C,Summary sentence,DESIGN,RANK,E
+Q16Aopt4,16A,Data on drug susceptibility is presented below in a number of different formats . Which do you find most interpretable.,D  Drugs listed by category bin,D,Drugs listed by category bin,DESIGN,RANK,E
+Q16Aopt5,16A,Data on drug susceptibility is presented below in a number of different formats . Which do you find most interpretable.,E  Abbreviated prediction by drug,E,Abbreviated prediction by drug,DESIGN,RANK,E
+Q16Bopt1,16B,Please explain your choice or provide feedback,NA,,,DESIGN,TEXT,NA
+Q17Aopt1,17A,Data on relatedness to other isolates clusters is presented below in a number of different formats . Which do you find most interpretable.,A    of cases with spark line,A,Number of cases with spark line,DESIGN,RANK,D
+Q17Aopt2,17A,Data on relatedness to other isolates clusters is presented below in a number of different formats . Which do you find most interpretable.,B    of isolates related table,B,Number of isolates related table,DESIGN,RANK,D
+Q17Aopt3,17A,Data on relatedness to other isolates clusters is presented below in a number of different formats . Which do you find most interpretable.,C  Table   Graph of   of isolates by SNP distance,C,Table   Graph of   of isolates by SNP distance,DESIGN,RANK,D
+Q17Aopt4,17A,Data on relatedness to other isolates clusters is presented below in a number of different formats . Which do you find most interpretable.,D  Table   Phylogenetic Tree,D,Table   Phylogenetic Tree,DESIGN,RANK,D
+Q17Aopt5,17A,Data on relatedness to other isolates clusters is presented below in a number of different formats . Which do you find most interpretable.,E  Related isolates with SNP difference details,E,Related isolates with SNP difference details,DESIGN,RANK,D
+Q17Aopt6,17A,Data on relatedness to other isolates clusters is presented below in a number of different formats . Which do you find most interpretable.,F  Summary with related isolates per year,F,Summary with related isolates per year,DESIGN,RANK,D
+Q17Bopt1,17B,Please explain your choice or provide feedback,NA,,,DESIGN,TEXT,NA
+Q18opt1,18,The reports below contrast between including a summary statement at the beginning of the report versus no summary. Please select which of the two potential layouts you find most preferable,NA,,,DESIGN,ONECHOICE,B
+Q19opt1,19,The reports below show two potential ways to layout the speciation  drug susceptibility  and relatedness information   with categories presented in either one or two columns.  Please select which of the two potential layouts you find most preferable,NA,,,DESIGN,ONECHOICE,A
+Q20Aopt1,20A,Please review the following report and select the response indicating your agreement with the corresponding statements.,This report is easy to read,,This report is easy to read,FULLREPORT,LIKERT,NA
+Q20Aopt2,20A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I know what the information in this report means,,I know what the information in this report means,FULLREPORT,LIKERT,NA
+Q20Aopt3,20A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I can read this report and get the information I need quickly,,I can read this report and get the information I need quickly,FULLREPORT,LIKERT,NA
+Q20Aopt4,20A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I feel that I can accurately interpret the information on this report,,I feel that I can accurately interpret the information on this report,FULLREPORT,LIKERT,NA
+Q20Bopt1,20B,Please provide any additional comments you may have on the report,NA,,,FULLREPORT,TEXT,NA
+Q21Aopt1,21A,Please review the following report and select the response indicating your agreement with the corresponding statements.,This report is easy to read,,This report is easy to read,FULLREPORT,LIKERT,NA
+Q21Aopt2,21A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I know what the information in this report means,,I know what the information in this report means,FULLREPORT,LIKERT,NA
+Q21Aopt3,21A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I can read this report and get the information I need quickly,,I can read this report and get the information I need quickly,FULLREPORT,LIKERT,NA
+Q21Aopt4,21A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I feel that I can accurately interpret the information on this report,,I feel that I can accurately interpret the information on this report,FULLREPORT,LIKERT,NA
+Q21Bopt1,21B,Please provide any additional comments you may have on the report,NA,,,FULLREPORT,TEXT,NA
+Q22Aopt1,22A,Please review the following report and select the response indicating your agreement with the corresponding statements.,This report is easy to read,,This report is easy to read,FULLREPORT,LIKERT,NA
+Q22Aopt2,22A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I know what the information in this report means,,I know what the information in this report means,FULLREPORT,LIKERT,NA
+Q22Aopt3,22A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I can read this report and get the information I need quickly,,I can read this report and get the information I need quickly,FULLREPORT,LIKERT,NA
+Q22Aopt4,22A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I feel that I can accurately interpret the information on this report,,I feel that I can accurately interpret the information on this report,FULLREPORT,LIKERT,NA
+Q22Bopt1,22B,Please provide any additional comments you may have on the report,NA,,,FULLREPORT,TEXT,NA
+Q23Aopt1,23A,Please review the following report and select the response indicating your agreement with the corresponding statements.,This report is easy to read,,This report is easy to read,FULLREPORT,LIKERT,NA
+Q23Aopt2,23A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I know what the information in this report means,,I know what the information in this report means,FULLREPORT,LIKERT,NA
+Q23Aopt3,23A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I can read this report and get the information I need quickly,,I can read this report and get the information I need quickly,FULLREPORT,LIKERT,NA
+Q23Aopt4,23A,Please review the following report and select the response indicating your agreement with the corresponding statements.,I feel that I can accurately interpret the information on this report,,I feel that I can accurately interpret the information on this report,FULLREPORT,LIKERT,NA
+Q23Bopt1,23B,Please provide any additional comments you may have on the report,NA,,,FULLREPORT,TEXT,NA
+Q24Aopt1,24A,The previous 4 report prototypes demonstrate different ways of presenting lab data from whole genome sequencing of a tuberculosis isolate. Which of the reports to you prefer.,A  Dark heading,A,Dark heading,FULLREPORT,RANK,NONE
+Q24Aopt2,24A,The previous 4 report prototypes demonstrate different ways of presenting lab data from whole genome sequencing of a tuberculosis isolate. Which of the reports to you prefer.,B  Gray heading,B,Gray heading,FULLREPORT,RANK,NONE
+Q24Aopt3,24A,The previous 4 report prototypes demonstrate different ways of presenting lab data from whole genome sequencing of a tuberculosis isolate. Which of the reports to you prefer.,C  Light Heading,C,Light Heading,FULLREPORT,RANK,NONE
+Q24Aopt4,24A,The previous 4 report prototypes demonstrate different ways of presenting lab data from whole genome sequencing of a tuberculosis isolate. Which of the reports to you prefer.,D  Pictures,D,Pictures,FULLREPORT,RANK,NONE
+Q24Bopt1,24B,Please explain your choice or provide feedback,NA,,,FULLREPORT,TEXT,NA
